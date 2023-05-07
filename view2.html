@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature Data Table</title>
+  <link rel="stylesheet" href="./style2.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Temperature Data Table</h1>
+  <nav>
+    <ul>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='view1.html'">Last 50 values</button>
+      <button onclick="location.href='view2.html'">Temperature</button>
+      <button onclick="location.href='view3.html'">Light</button>
+      <span style="margin-left: 1em;">Select timespan:</span>
+      <button onclick="updateTemperatureData('20')">Now</button>
+      <button onclick="updateTemperatureData('24h')">24 hours</button>
+      <button onclick="updateTemperatureData('48h')">48 hours</button>
+      <button onclick="updateTemperatureData('72h')">72 hours</button>
+      <button onclick="updateTemperatureData('1w')">1 week</button>
+      <button onclick="updateTemperatureData('1m')">1 month</button>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="table-wrapper">
+      <table id="temperature-data">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Temperature (°C)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="chart-wrapper">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+  <script src="./script2.js"></script>
+  <script src="./view2.js"></script>
+</body>
+</html>

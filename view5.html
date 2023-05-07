@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Data</title>
+    <script src="script5.js"></script>
+  </head>
+  <body>
+    <h1>Weather Data</h1>
+    
+    <label for="measurement-select">Measurement:</label>
+    <select id="measurement-select">
+      <option value="temperature">Temperature</option>
+      <option value="wind_speed">Wind Speed</option>
+      <option value="wind_direction">Wind Direction</option>
+      <option value="light">Light</option>
+      <option value="rain">Rain</option>
+      <option value="humidity_out">Humidity Out</option>
+      <option value="humidity_in">Humidity In</option>
+    </select>
+    
+    <label for="time-span-select">Time Span:</label>
+    <select id="time-span-select">
+      <option value="last-hour">Last Hour</option>
+      <option value="last-6-hours">Last 6 Hours</option>
+      <option value="last-day">Last Day</option>
+      <option value="last-week">Last Week</option>
+    </select>
+
+    <table id="temperature-table" class="hidden">
+      <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>Temperature (°C)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="wind-speed-table" class="hidden">
+      <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>Wind Speed (m/s)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="wind-direction-table" class="hidden">
+      <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>Wind Direction (°)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="light-table" class="hidden">
+      <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>Light (%)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="rain-table" class="hidden">
+      <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>Rain (mm)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="humidity-out-table" class="hidden">
+      <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>Humidity Out (%)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="humidity-in-table" class="hidden">
+      <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>Humidity In (%)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+  </body>
+</html>

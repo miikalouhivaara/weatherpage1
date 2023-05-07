@@ -1,0 +1,47 @@
+body {
+    background: url('https://source.unsplash.com/featured/?weather') no-repeat center center fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+  
+  nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  .view-button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #555;
+  }
+  

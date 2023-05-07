@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Light Data Table</title>
+  <link rel="stylesheet" href="./style3.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Light Data Table</h1>
+  <nav>
+    <ul>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='view1.html'">Last 50 values</button>
+      <button onclick="location.href='view2.html'">Temperature</button>
+      <button onclick="location.href='view3.html'">Light</button>
+      <span style="margin-left: 1em;">Select timespan:</span>
+      <button onclick="updateLightData('20')">Now</button>
+      <button onclick="updateLightData('24h')">24 hours</button>
+      <button onclick="updateLightData('48h')">48 hours</button>
+      <button onclick="updateLightData('72h')">72 hours</button>
+      <button onclick="updateLightData('1w')">1 week</button>
+      <button onclick="updateLightData('1m')">1 month</button>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="table-wrapper">
+      <table id="light-data">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Light</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="chart-wrapper">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+  <script src="./script3.js"></script>
+  <script src="./view3.js"></script>
+</body>
+</html>
